@@ -9,10 +9,10 @@ int main(int argc, char** argv) {
     std::ofstream fout(argv[2]);
 
     std::vector<int> nums;
-    std::string num;
+    int num;
 
     while (fin >> num) {
-        nums.push_back(stoi(num));
+        nums.push_back(num);
     }
 
     auto unique_nums = std::unique(nums.begin(), nums.end());
