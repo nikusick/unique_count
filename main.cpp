@@ -15,12 +15,12 @@ int main(int argc, char** argv) {
         nums.push_back(num);
     }
 
-    auto unique_nums = std::unique(nums.begin(), nums.end());
-    nums.erase(unique_nums, nums.end());
+    auto uniqueNums = std::unique(nums.begin(), nums.end());
+    nums.erase(uniqueNums, nums.end());
 
-    auto one_count = std::count(nums.begin(), nums.end(), 1);
-    auto zero_count = std::count(nums.begin(), nums.end(), 0);
-    fout << one_count << " "  << zero_count;
+    auto unityCount = std::count(nums.begin(), nums.end(), 1);
+    auto zeroCount = std::count(nums.begin(), nums.end(), 0);
+    fout << unityCount << " "  << zeroCount;
 
     fin.close();
     fout.close();
