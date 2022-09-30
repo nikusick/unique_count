@@ -4,7 +4,7 @@
 #include <algorithm>
 
 int main(int argc, char** argv) {
-
+    if (argc == 3) {
     std::ifstream fin(argv[1]);
     std::ofstream fout(argv[2]);
 
@@ -24,5 +24,9 @@ int main(int argc, char** argv) {
 
     fin.close();
     fout.close();
+    }
+    else {
+        std::cout << "Must be 2 arguments: input and output files";
+    }
     return 0;
 }
